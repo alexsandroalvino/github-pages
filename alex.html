@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .cv-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            overflow: hidden;
+        }
+        .blue-wave-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-color: #0056a4;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+            z-index: 0;
+        }
+        .blue-wave-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-color: #0056a4;
+            clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+            z-index: 0;
+        }
+        .white-wave {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 70%);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px 40px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        .profile-info {
+            flex: 2;
+        }
+        .profile-photo {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #0056a4;
+            object-fit: cover;
+        }
+        h1 {
+            color: #0056a4;
+            margin: 0;
+            font-size: 38px;
+        }
+        h2 {
+            color: #333;
+            margin: 5px 0;
+            font-weight: normal;
+            font-size: 24px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            background-color: #0056a4;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 0 20px 20px 0;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        .label {
+            flex: 1;
+            font-weight: bold;
+        }
+        .value {
+            flex: 2;
+        }
+        .skills li:before {
+            content: "• ";
+            color: #0056a4;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="blue-wave-top"></div>
+        <div class="white-wave"></div>
+        <div class="content">
+            <div class="header">
+                <div class="profile-info">
+                    <h1>Alexsandro Alvino</h1>
+                    <h2> 2 SMK </h2>
+                </div>
+                <div class="profile-photo">
+                    <img src="https://a.top4top.io/p_3424ey4kf1.jpg" alt="Alexsandro Alvino">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">DATA PRIBADI</div>
+                <ul>
+                    <li>
+                        <div class="label">Nama Lengkap</div>
+                        <div class="value">: Alexsandro Alvino</div>
+                    </li>
+                    <li>
+                        <div class="label">Tanggal Lahir</div>
+                        <div class="value">: 8 November 2008</div>
+                    </li>
+                    <li>
+                        <div class="label">Jenis Kelamin</div>
+                        <div class="value">: Laki-laki</div>
+                    </li>
+                    <li>
+                        <div class="label">Alamat</div>
+                        <div class="value">: Jalan Paus Blok 89 E</div>
+                    </li>
+                    <li>
+                        <div class="label">Email</div>
+                        <div class="value">: alexsandro11024@gmail.com</div>
+                    </li>
+                    <li>
+                        <div class="label">Status</div>
+                        <div class="value">: Pelajar</div>
+                    </li>
+                    <li>
+                        <div class="label">Kewarganegaraan</div>
+                        <div class="value">: Indonesia</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">PENDIDIKAN</div>
+                <ul class="skills">
+                    <li>SMA Metta Maitreya</li>
+                    <li>SMP Metta Maitreya</li>
+                    <li>SD Metta Maitreya</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">PORTOFOLIO</div>
+                <p>LINKEDIN : https://www.linkedin.com/in/alexsandro-alvino-b5a833365/</p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">KETERAMPILAN</div>
+                <ul class="skills">
+                    <li>Critical Thinker</li>
+                    <li>Problem Solving</li>
+                    <li>Bahasa Inggris</li>
+                </ul>
+            </div>
+        </div>
+        <div class="blue-wave-bottom"></div>
+    </div>
+</body>
+</html>
